@@ -20,7 +20,7 @@
 </head>
 <body>
 <h1>Privacy policy for BulkText</h1>
-<p class="meta">Effective date: <strong>13 October 2026</strong></p>
+<p class="meta">Effective date: <strong>14 October 2026</strong></p>
 
 <h2>1. Who we are</h2>
 <p>BulkText is published by <strong>PrivaTools</strong>. Questions about this policy: <strong><a href="mailto:gulfidevwork@gmail.com">gulfidevwork@gmail.com</a></strong>.</p>
@@ -35,7 +35,7 @@
 <ul>
   <li><strong>Text messages (SMS) and multimedia messages (MMS).</strong> As the default SMS app, BulkText reads and writes your messages in Android's SMS storage, the same storage every SMS app uses, and keeps its own copy of message text and status. MMS pictures stay in Android's SMS storage.</li>
   <li><strong>BulkText contacts:</strong> the names, phone numbers and custom fields you enter or import, and the consent record you keep for each contact (a consent status and an optional note).</li>
-  <li><strong>Groups, message templates, and campaigns</strong> with each recipient's personalized message and its sent, delivered or failed status.</li>
+  <li><strong>Groups, message templates, and broadcasts</strong> with each recipient's personalized message and its sent, delivered or failed status.</li>
   <li><strong>The do-not-message list:</strong> numbers that replied with an opt-out word such as STOP, or that you added, with the date and how each was added.</li>
   <li><strong>A copy of the names and numbers in your phone's contacts</strong>, used to show names in the Inbox, in conversations and in notifications, and to let you pick contacts to import. It exists only while BulkText has contacts access.</li>
   <li><strong>Settings</strong>, including your own phone number if you enter it (used to send test messages to yourself) and the SIM you choose for sending.</li>
@@ -48,17 +48,17 @@
   <li><strong>SMS</strong> (send, receive and read SMS; receive MMS). These are what an SMS app needs to show, receive and send your messages. Google Play's policy, together with Android's rules for restricted permissions, lets BulkText use them only as your default SMS app, and BulkText asks for them only after you have made it your default SMS app.</li>
   <li><strong>Contacts</strong> (read only). To show the names saved in your phone's contacts and to let you import contacts you pick. When BulkText is the default SMS app, Android also gives it contacts access (on Android 10 and newer the system dialog lists Contacts), so names from the phone's contacts appear without a separate prompt. Turning contacts off in system settings removes them.</li>
   <li><strong>Phone state</strong> (<code>READ_PHONE_STATE</code>). Only to list your phone's SIMs, so you can choose which SIM sends. Nothing it reads leaves your phone.</li>
-  <li><strong>Notifications.</strong> To tell you about new messages and to show a campaign's progress while it sends.</li>
-  <li><strong>Foreground service, start in the background, run at startup and keep awake.</strong> A campaign sends while BulkText isn't on screen, starts at the time you scheduled or when quiet hours end, and continues after your phone restarts.</li>
-  <li><strong>Internet and network state.</strong> Used by the Google Mobile Ads SDK to load ads and by Google's consent tool. BulkText's own features don't use the internet. The network-state permission is also declared by Android's WorkManager library, which BulkText uses to run campaigns.</li>
+  <li><strong>Notifications.</strong> To tell you about new messages and to show a broadcast's progress while it sends.</li>
+  <li><strong>Foreground service, start in the background, run at startup and keep awake.</strong> A broadcast sends while BulkText isn't on screen, starts at the time you scheduled or when quiet hours end, and continues after your phone restarts.</li>
+  <li><strong>Internet and network state.</strong> Used by the Google Mobile Ads SDK to load ads and by Google's consent tool. BulkText's own features don't use the internet. The network-state permission is also declared by Android's WorkManager library, which BulkText uses to send broadcasts.</li>
   <li><strong>Basic phone state</strong> (<code>READ_BASIC_PHONE_STATE</code>). Declared by the Google Mobile Ads SDK; it gives read-only access to basic information such as the type of mobile network. Android grants it without asking.</li>
   <li><strong>Advertising ID.</strong> Used by the Google Mobile Ads SDK (see section 5).</li>
 </ul>
 <p>When you make BulkText your default SMS app, Android's dialog may list other permission groups, such as Camera, Microphone or Files and media. Android grants only the permissions an app declares, and BulkText doesn't declare those, or location or call-log permissions.</p>
 
 <h2>5. What leaves your phone</h2>
-<p><strong>Your messages, through your carrier.</strong> The texts you send, including campaign messages and test messages to yourself, go through your mobile carrier to the recipients you choose, and your carrier's charges apply. Incoming MMS are downloaded from your carrier by Android. Your carrier sends delivery reports where it supports them. If you turn on the automatic reply to opt-outs (off by default), BulkText sends that reply by SMS to a number that has just opted out. Your carrier handles your messages under its own terms and privacy policy. We never receive them.</p>
-<p><strong>Ads, through Google AdMob.</strong> BulkText shows a banner ad on its Campaigns, Contacts and Templates screens, provided by Google AdMob. To show and measure ads and to prevent fraud, the Google Mobile Ads SDK in BulkText sends Google:</p>
+<p><strong>Your messages, through your carrier.</strong> The texts you send, including broadcast messages and test messages to yourself, go through your mobile carrier to the recipients you choose, and your carrier's charges apply. Incoming MMS are downloaded from your carrier by Android. Your carrier sends delivery reports where it supports them. If you turn on the automatic reply to opt-outs (off by default), BulkText sends that reply by SMS to a number that has just opted out. Your carrier handles your messages under its own terms and privacy policy. We never receive them.</p>
+<p><strong>Ads, through Google AdMob.</strong> BulkText shows a banner ad on its Broadcasts, Contacts and Templates screens, provided by Google AdMob. To show and measure ads and to prevent fraud, the Google Mobile Ads SDK in BulkText sends Google:</p>
 <ul>
   <li>your IP address, from which Google may estimate your approximate location;</li>
   <li>interactions such as app launches and taps on ads;</li>
@@ -67,8 +67,8 @@
 </ul>
 <p>Google AdMob encrypts this data in transit. Google's use of it is described in "How Google uses information from sites or apps that use our services" (<a href="https://policies.google.com/technologies/partner-sites">https://policies.google.com/technologies/partner-sites</a>) and in Google's privacy policy (<a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a>).</p>
 <p>Where the law requires it, for example in the European Economic Area, the United Kingdom and Switzerland, BulkText asks for your consent through Google's consent tool before ads are requested, and you can change your choice at any time in Settings → Ads → "Ad privacy choices". The consent tool contacts Google to learn which rules apply where you are. You can reset or delete your advertising ID in Android's settings (usually under Privacy → Ads).</p>
-<p>BulkText never gives your messages, phone numbers, contacts, recipients or campaigns to Google or any other ad network, and never uses them for advertising. Ad requests contain no information from them.</p>
-<p><strong>Backup and export files, only where you choose.</strong> "Back up to a file" saves your contacts, groups, templates, do-not-message list and settings in a file, and campaign export saves a campaign's recipients and results as a CSV file. Each is written only to the place you pick, which may be your phone or a cloud drive you use. These files aren't encrypted and contain names and phone numbers, so keep them private.</p>
+<p>BulkText never gives your messages, phone numbers, contacts, recipients or broadcasts to Google or any other ad network, and never uses them for advertising. Ad requests contain no information from them.</p>
+<p><strong>Backup and export files, only where you choose.</strong> "Back up to a file" saves your contacts, groups, templates, do-not-message list and settings in a file, and exporting a broadcast saves its recipients and results as a CSV file. Each is written only to the place you pick, which may be your phone or a cloud drive you use. These files aren't encrypted and contain names and phone numbers, so keep them private.</p>
 <p><strong>Sale or sharing.</strong> BulkText has no purchases or subscriptions, and we don't sell your data to anyone.</p>
 
 <h2>6. Children</h2>
@@ -77,7 +77,7 @@
 <h2>7. How long data is kept, and how to delete it</h2>
 <ul>
   <li>Data in BulkText stays on your phone until you delete it or uninstall BulkText.</li>
-  <li>In the app you can delete contacts, groups, templates, do-not-message entries and messages that failed. This version can't delete conversations, campaigns, or messages other than failed ones.</li>
+  <li>In the app you can delete contacts, groups, templates, do-not-message entries and messages that failed. This version can't delete conversations, broadcasts, or messages other than failed ones.</li>
   <li>Uninstalling BulkText, or clearing its storage in Android's app settings, deletes everything BulkText stores itself, including its copy of your messages and your ad consent choice. Your messages stay in Android's SMS storage, where another SMS app can show or delete them. Backup and export files you saved stay where you put them.</li>
   <li>BulkText's copy of your phone's contact names is deleted when contacts access is turned off.</li>
   <li>Data Google receives for ads is kept under Google's policies. You can reset or delete your advertising ID in Android's settings.</li>

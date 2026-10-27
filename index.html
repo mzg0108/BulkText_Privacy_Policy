@@ -20,7 +20,7 @@
 </head>
 <body>
 <h1>Privacy policy for BulkText</h1>
-<p class="meta">Effective date: <strong>20 October 2026</strong></p>
+<p class="meta">Effective date: <strong>27 October 2026</strong></p>
 
 <h2>1. Who we are</h2>
 <p>BulkText is published by <strong>PrivaTools</strong>. Questions about this policy: <strong><a href="mailto:gulfidevwork@gmail.com">gulfidevwork@gmail.com</a></strong>.</p>
@@ -38,6 +38,7 @@
   <li><strong>BulkText contacts:</strong> the names, phone numbers and custom fields you enter or import, and the consent record you keep for each contact (a consent status and an optional note).</li>
   <li><strong>Groups, message templates, and broadcasts</strong> with each recipient's personalized message and its sent, delivered or failed status.</li>
   <li><strong>The do-not-message list:</strong> numbers that replied with an opt-out word such as STOP, or that you added, with the date and how each was added.</li>
+  <li><strong>Spam and blocked numbers:</strong> which conversations you reported as spam, and a copy of the numbers on your phone's block list. As your default SMS app, BulkText reads that list to sort conversations into Spam &amp; blocked and to leave blocked numbers out of broadcasts. It adds a number only when you block it, and removes one only when you unblock it or mark its conversation as not spam while the number is blocked. The list itself belongs to Android, which shares it with your Phone app.</li>
   <li><strong>A copy of the names and numbers in your phone's contacts</strong>, used to show names in the Inbox, in conversations and in notifications, and to let you pick contacts to import. It exists only while BulkText has contacts access.</li>
   <li><strong>Settings</strong>, including your own phone number if you enter it (used to send test messages to yourself) and the SIM you choose for sending.</li>
   <li><strong>Your ad consent choice</strong>, stored on the phone by Google's consent tool (see section 5).</li>
@@ -46,7 +47,7 @@
 
 <h2>4. Permissions and why BulkText uses them</h2>
 <ul>
-  <li><strong>SMS</strong> (send, receive and read SMS; receive MMS). These are what an SMS app needs to show, receive and send your messages. Google Play's policy, together with Android's rules for restricted permissions, lets BulkText use them only as your default SMS app, and BulkText asks for them only after you have made it your default SMS app.</li>
+  <li><strong>SMS</strong> (send, receive and read SMS; receive MMS). These are what an SMS app needs to show, receive and send your messages. Google Play's policy, together with Android's rules for restricted permissions, lets BulkText use them only as your default SMS app, and BulkText asks for them only after you have made it your default SMS app. As your default SMS app, BulkText can also read and change the phone's list of blocked numbers; Android gives that access only to the default SMS app and the Phone app, without a separate permission.</li>
   <li><strong>Contacts</strong> (read only). To show the names saved in your phone's contacts and to let you import contacts you pick. When BulkText is the default SMS app, Android also gives it contacts access (on Android 10 and newer the system dialog lists Contacts), so names from the phone's contacts appear without a separate prompt. Turning contacts off in system settings removes them. To attach a contact card, BulkText reads the one contact you pick; the card contains only that contact's name, phone numbers and email addresses.</li>
   <li><strong>Phone state</strong> (<code>READ_PHONE_STATE</code>). Only to list your phone's SIMs, so you can choose which SIM sends. Nothing it reads leaves your phone.</li>
   <li><strong>Notifications.</strong> To tell you about new messages and to show a broadcast's progress while it sends.</li>
@@ -82,7 +83,9 @@
 <ul>
   <li>Data in BulkText stays on your phone until you delete it or uninstall BulkText.</li>
   <li>In the app you can delete contacts, groups, templates, do-not-message entries, scheduled messages and messages that failed. This version can't delete conversations, broadcasts, or messages you sent or received, other than failed ones.</li>
+  <li>Unblocking a number, in BulkText or in your Phone app, removes it from the phone's block list and from BulkText's copy. Not spam removes a spam mark and, when the conversation's number is blocked, also takes the number off the block list.</li>
   <li>Uninstalling BulkText, or clearing its storage in Android's app settings, deletes everything BulkText stores itself, including its copy of your messages and your ad consent choice. Your messages stay in Android's SMS storage, where another SMS app can show or delete them. Backup and export files you saved stay where you put them.</li>
+  <li>Uninstalling BulkText deletes its spam marks; numbers you blocked stay on the phone's block list.</li>
   <li>BulkText's copy of your phone's contact names is deleted when contacts access is turned off.</li>
   <li>Data Google receives for ads is kept under Google's policies. You can reset or delete your advertising ID in Android's settings.</li>
 </ul>
